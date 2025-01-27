@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* First row for Photo 1 and Photo 2 */
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-row img {
+            width: 45%;  /* Adjust width to fit two images */
+            height: auto;
+        }
+
+        /* Second row for Photo 3, Photo 4, and Photo 5 */
+        .gallery-row-2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-row-2 img {
+            width: 30%;  /* Adjust width to fit three images in one row */
+            height: auto;
+        }
+        .horizontal {
+            width: 65%;  /* Make this photo take up more space */
+            height: auto;
+        }
+
+        /* Container for vertical photos (right side) */
+        .vertical {
+            display: flex;
+            flex-direction: row;  /* Ensure the photos are side by side */
+            gap: 15px;
+            width: 45%;  /* Two vertical photos will share this space */
+        }
+
+        /* Vertical photos inside the container */
+        .vertical img {
+            width: 48%;  /* Make each vertical photo take up 48% of the container width */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <iframe title="Header" name="header" src="header.html" width="100%" height="120" style="border: none;"></iframe>
+
+        <br><br><br><br>
+        <div class="gallery">
+            <div class="gallery-row">
+                <img src="photos/photo1.png" alt="Photo 1">
+                <img src="photos/photo2.jpg" alt="Photo 2">
+            </div>
+
+            <div class="gallery-row-2">
+                <img src="photos/photo3.jpeg" alt="Photo 3">
+                <img src="photos/photo4.jpeg" alt="Photo 4">
+                <img src="photos/photo5.jpg" alt="Photo 5">
+            </div>
+            <div class="gallery-row">
+                <img src="photos/photo6.jpeg" alt="Photo 6">
+                <img src="photos/photo7.jpeg" alt="Photo 7">
+            </div>
+            <div class="gallery-row">
+                <img src="photos/photo8.jpg" class="horizontal" alt="Photo 8">
+
+                <div class="vertical">
+                    <img src="photos/photo9.png" alt="Photo 9">
+                    <img src="photos/photo10.png" alt="Photo 10">
+                </div>
+            </div>
+            <div class="gallery-row-2">
+            	<img src="photos/photo11.jpg" alt="Photo 11">
+                <img src="photos/photo12.jpg" alt="Photo 12">
+                <img src="photos/photo13.jpeg" alt="Photo 13">
+	        </div>
+	        <div class="gallery-row">
+	        	<img src="photos/photo14.jpeg" alt="Photo 14">
+	            <img src="photos/photo15.jpeg" alt="Photo 15">
+	        </div>
+	            <img src="photos/photo16.png" alt="Photo 16" width="90%">
+	        </div>
+	        <br>
+	        <div class="gallery-row-2">
+	        	<img src="photos/photo17.jpg" alt="Photo 17">
+                <img src="photos/photo18.jpg" alt="Photo 18">
+                <img src="photos/photo19.jpeg" alt="Photo 19">
+	        </div> <br>
+	        <div class="gallery-row">
+	        	<div class="vertical">
+                    <img src="photos/photo20.jpg" alt="Photo 20">
+                    <img src="photos/photo21.png" alt="Photo 21">
+               </div>
+                <img src="photos/photo22.png" class="horizontal" alt="Photo 22">
+            </div> <br>
+            <div class="gallery-row">
+                <img src="photos/photo23.png" alt="Photo 23">
+                <img src="photos/photo24.jpeg" alt="Photo 24">
+            </div> <br>
+            <div class="gallery">
+            	<img src="photos/photo25.jpeg" alt="Photo 25" width="90%">
+            <div class="gallery-row-2">
+	        	<img src="photos/photo26.jpeg" alt="Photo 17">
+                <img src="photos/photo27.png" alt="Photo 18">
+                <img src="photos/photo28.jpeg" alt="Photo 19">
+	        </div> 
+	        <div class="gallery-row">
+	        	<img src="photos/photo29.jpeg" alt="Photo 29">
+                <img src="photos/photo30.jpeg" alt="Photo 30">
+            </div> 
+             <div class="gallery-row-2">
+	        	<img src="photos/photo31.jpeg" alt="Photo 31">
+                <img src="photos/photo32.jpeg" alt="Photo 32">
+                <img src="photos/photo33.png" alt="Photo 33">
+	        </div> 
+	        <div class="gallery-row-2">
+	        	<img src="photos/photo34.jpg" alt="Photo 34">
+                <img src="photos/photo35.jpeg" alt="Photo 35">
+                <img src="photos/photo36.jpeg" alt="Photo 36">
+	        </div> 
+
+        </div>
+
+
+        <br><br><br>
+
+        <iframe title="Footer" name="footer" src="footer.html" width="100%" height="100" style="border: none;"></iframe>
+    </div>
+</body>
+</html>
+
+
